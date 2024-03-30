@@ -3,14 +3,16 @@
 #include "Game_Saver.h"
 
 
-using namespace std;
 
 int main() 
 {
+
+	using namespace std;
+
 	Game_Saver save;
 	
 	cout << "欢迎使用末日拾荒者(NEOScavenger)快速存档器" << endl;
-	Sleep(3500);
+	Sleep(1500);
 	
 	int choice = 0;
 	for (int i = 0; i < 5;) 
@@ -33,35 +35,35 @@ int main()
 			system("cls");
 			save.Save();
 			cout << "存档操作完成" << endl;
-			Sleep(2500);
+			Sleep(1500);
 			break;
 		case 2:
 			system("cls");
 			save.Restore();
 			cout << "读档操作完成" << endl;
-			Sleep(2500);
+			Sleep(1500);
 			break;
 		case 3:
 			system("cls");
 			save.Delete_Restore();
 			cout << "删除备份存档操作完成" << endl;
-			Sleep(2500);
+			Sleep(1500);
 			break;
 		case 4:
 			system("cls");
 			save.Delete_Save();
 			cout << "删除当前存档操作完成" << endl;
-			Sleep(2500);
+			Sleep(1500);
 			break;
 		case 5:
 			system("cls");
 			cout << "程序退出中,请稍等." << endl;
-			Sleep(2500);
+			Sleep(1500);
 			i = 20;
 			break;
 		default:
 			cout << "键入有误,请重新输入." << endl;
-			Sleep(2500);
+			Sleep(1500);
 			break;
 		}
 	}

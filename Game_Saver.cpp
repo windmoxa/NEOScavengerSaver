@@ -34,7 +34,7 @@ std::string Game_Saver::Readcfg()
 			ofstream cfgfile(".\\save\\savepath.cfg");
 			cfgfile << DefaultConfigPath;
 			cfgfile.close();
-			Sleep(3500);
+			Sleep(2500);
 		}else i = 20;
 	}
 	getline(cfg, path);
